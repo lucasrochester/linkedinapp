@@ -4,7 +4,6 @@ from tkinter import messagebox
 from tkinter import ttk
 from datetime import datetime
 
-# ---------- DATABASE CONNECTION ----------
 def connect_db():
     return mysql.connector.connect(
         host="localhost",
@@ -39,7 +38,6 @@ class LinkedInApp:
         self.create_comment_tab()
         self.create_experience_tab()
 
-    # ---------- USER TAB ----------
     def create_user_tab(self):
         labels = ["User ID", "Role", "First Name", "Middle Name", "Last Name", "DOB (YYYY-MM-DD)"]
         self.user_entries = {}
@@ -128,7 +126,6 @@ class LinkedInApp:
         except Exception as err:
             messagebox.showerror("Error", f"Search failed: {err}")
 
-    # ---------- POST TAB ----------
     def create_post_tab(self):
         labels = ["Post ID", "User ID", "Image URL", "Caption"]
         self.post_entries = {}
@@ -220,7 +217,6 @@ class LinkedInApp:
         except Exception as err:
             messagebox.showerror("Error", f"Search failed: {err}")
 
-    # ---------- COMMENT TAB ----------
     def create_comment_tab(self):
         labels = ["Post ID", "Comment Text"]
         self.comment_entries = {}
@@ -295,7 +291,6 @@ class LinkedInApp:
         except Exception as err:
             messagebox.showerror("Error", f"Search failed: {err}")
 
-    # ---------- EXPERIENCE TAB ----------
     def create_experience_tab(self):
         labels = ["User ID", "Role", "Company", "Start Date (YYYY-MM-DD)", "End Date (YYYY-MM-DD)"]
         self.exp_entries = {}
@@ -375,8 +370,6 @@ class LinkedInApp:
         except Exception as err:
             messagebox.showerror("Error", f"Search failed: {err}")
 
-
-# ---------- LAUNCH ----------
 if __name__ == "__main__":
     root = tk.Tk()
     app = LinkedInApp(root)
