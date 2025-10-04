@@ -1,0 +1,30 @@
+# LinkedInResults Database Application
+
+## About: A Python desktop GUI for managing a LinkedIn-style relational database.  
+The app is built with **Tkinter** for the interface and **MySQL** as the backend database.
+
+## Tech Stack
+# - Language: Python 3.x
+# - Database: MySQL
+# - Connector: mysql-connector-python
+# - Libraries: datetime, mysql.connector, tkinter
+
+## Features
+#  - LinkedIn Users: Create, Read, Update, Delete Users
+#  - Posts: Create, Read, Update, Delete Posts associated with Users
+#  - Comments: Add comments to a specific post, Read comments for a specific post, Delete a #specific comment by post + text
+#  - Experience: Add experience for a specific user, Read all experiences for a given user,  #Delete a specific experience by user + role + company
+# - User-friendly tabbed interface
+# - Inline database output display 
+# - Real-time success/error messages
+
+## How to Run
+# 1. Ensure the mySQL database is running and the required packages are installed.
+# 2. Run the application.
+# 3. Select a tab for desired entity.
+# 4. Type desired changes in relevant attribute box.
+# 5. Click designated button to make changes.
+
+## Author
+# Lucas Rochester
+
